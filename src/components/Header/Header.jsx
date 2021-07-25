@@ -1,7 +1,7 @@
 import React from "react";
 import './Header.scss';
 import {Link} from "react-router-dom";
-import {auth} from "../../firebase/firebase-utils";
+import {auth, createUSerProfileDocument} from "../../firebase/firebase-utils";
 
 const Header=({currentUser}) =>(
     <div className='header'>
@@ -10,7 +10,6 @@ const Header=({currentUser}) =>(
             <Link className='option' to='/shop'>
                 SHOP
             </Link>
-
             <Link className='option' to='/contact'>
                 CONTACT
             </Link>

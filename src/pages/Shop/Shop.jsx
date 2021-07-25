@@ -11,7 +11,6 @@ class Shop extends Component {
 
     render() {
 
-        console.log(this.state.collections);
         return (
             <div className='shop-page'>
                 {
